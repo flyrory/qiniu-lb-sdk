@@ -1,0 +1,30 @@
+{
+    "name": "flyrory/qiniu-lb-sdk",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "flyrory",
+            "email": "chenjian@chjgo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flyrory\\QiniuLbSdk\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flyrory\\QiniuLbSdk\\QiniuLbSdkServiceProvider"
+            ]
+        }
+    }
+}
