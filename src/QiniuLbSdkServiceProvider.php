@@ -3,7 +3,7 @@
 namespace Flyrory\QiniuLbSdk;
 
 use Illuminate\Support\ServiceProvider;
-use Flyrory\QiniuLbSdk\Lib\QiniuLb;
+use Flyrory\QiniuLbSdk\QiniuLb;
 
 class QiniuLbSdkServiceProvider extends ServiceProvider
 {
