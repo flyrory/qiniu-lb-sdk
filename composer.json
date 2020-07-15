@@ -1,6 +1,6 @@
 {
     "name": "flyrory/qiniu-lb-sdk",
-    "description": "Package description here.",
+    "description": "基于七牛官方sdk的流管理laravel包",
     "license": "MIT",
     "authors": [
         {
