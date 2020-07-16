@@ -51,7 +51,7 @@ class QiniuLb
         $this->snapshotPlayUrl = config('lb.live_snapshot_play_domain');
         $this->mac = new Mac($this->accessKey, $this->secretKey);
         $this->client = new Client($this->mac);
-        $this->hub = $this->client->hub($this->mac);
+        $this->hub = $this->client->hub($this->hubName);
     }
 
     /**
