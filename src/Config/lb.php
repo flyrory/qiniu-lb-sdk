@@ -14,12 +14,12 @@ return [
     /*
      * 访问key
      */
-    'access_key' => env('qiniu_lb_access_key'),
+    'access_key' => env('QINIU_LB_ACCESS_KEY'),
 
     /*
      * 校验key(秘钥)
      */
-    'secret_key' => env('qiniu_lb_secret_key'),
+    'secret_key' => env('QINIU_LB_SECRET_KEY'),
 
     /*
      * 空间名
@@ -74,5 +74,5 @@ return [
     /*
      * 连麦api版本 (支持v1 或 v2)
      */
-    'rtcapi_version' =>env('QINIU_LB_RTCAPI_VERSION', 'v2'),
+    'rtcapi_version' => env('QINIU_LB_RTCAPI_VERSION', 'v2'),
 ];
