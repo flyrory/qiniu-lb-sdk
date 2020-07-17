@@ -170,7 +170,8 @@ class HttpRequest
         $body        = substr($response, $header_size);
         $httpCode    = $curl_info["http_code"];
         if ($httpCode != 200) {
-            throw new \Exception("\nhttpcode:".$httpCode."\nmessage".$body);
+            $body = json_decode($body, true);
+            throw new \Exception($body['error'], $httpCode);
         }
         return new HttpResponse($httpCode, $body, $header);
     }
