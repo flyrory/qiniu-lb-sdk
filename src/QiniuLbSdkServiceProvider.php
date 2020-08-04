@@ -26,7 +26,7 @@ class QiniuLbSdkServiceProvider extends ServiceProvider
 
         // 发布配置文件 + 可以发布迁移文件
         $this->publishes([
-            __DIR__.'/config/lb.php' => config_path('lb.php'),
+            __DIR__.'/Config/lb.php' => config_path('lb.php'),
         ]);
 
     }
@@ -42,7 +42,7 @@ class QiniuLbSdkServiceProvider extends ServiceProvider
     {
         // 将给定配置文件合现配置文件接合
         $this->mergeConfigFrom(
-            __DIR__.'/config/lb.php', 'lb'
+            __DIR__.'/Config/lb.php', 'lb'
         );
 
         // 容器绑定
